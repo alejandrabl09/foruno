@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de trabajos</title>
+</head>
+<body>
+    <h1>Desarrollo de validacion</h1>
+    <link rel="stylesheet" type ="text/css" href="">
+   
+    <form name="miform" action="recibe.php" method="POST" onsubmit="return validarformulario();">
+		<table>
+			<tr>
+				<td>Nombre</td>
+				<td><input type="text" name="nombre" id="nomnre"></td>
+			</tr>
+			<tr>
+				<td>Telefono</td>
+				<td><input type="text" name="Telefono" id="Telefono"></td>
+			</tr>
+			<tr>
+				<td>Fecha de nacimiento</td>
+				<td>
+                    <input type="text" name="dia" size="2" id="day">
+					<input type="text" name="mes" size="2" id="month">
+					<input type="text" name="anio" size="2" id="anio">
+                </td>
+              
+			</tr>
+			<tr>
+				<td>Sexo</td>
+				<td>
+					<input type="radio" name="sexo" value="H">Hombre
+					<input type="radio" name="sexo" value="M">Mujer
+				</td>
+			</tr>
+			<tr>
+				<td>Mayor a 10 años</td>
+				<td><input type="checkbox" name="mayor"></td>
+			</tr>
+		</table>
+
+		<p>
+			<input type="submit" name="" value="Enviar">
+			<input type="reset" name="" value="Limpiar">
+        </p>
+    </form>
+
+
+</div>
+</body>
+</html>
